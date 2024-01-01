@@ -1,6 +1,6 @@
 {
 	"build": {"dockerfile": "Dockerfile", "args": { "VARIANT": "4.3.2" }},
 	"forwardPorts": [8787],
-	"portsAttributes": {"8787": {"label": "Rstudio", "onAutoForward": "openBrowser"}},
+	"portsAttributes": {"8787": {"label": "Rstudio", "onAutoForward": "notify"}},
 	"postAttachCommand": "rstudio-server start"
 }
